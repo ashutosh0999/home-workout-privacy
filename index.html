@@ -53,10 +53,10 @@
     <thead><tr><th>What</th><th>Examples</th><th>Health or fitness data?</th></tr></thead>
     <tbody>
       <tr><td>Quiz answers</td><td>Gender (optional), goal, focus areas, motivation, workout place and frequency, fitness level, stamina and flexibility answers, chosen reward</td><td>Some (fitness level, stamina, flexibility)</td></tr>
-      <tr><td>Body measurements</td><td>Height, current weight, target weight, birth year</td><td>Yes</td></tr>
+      <tr><td>Body measurements</td><td>Height, current weight and your weight log (dates and weights), target weight, birth year</td><td>Yes</td></tr>
       <tr><td>Injuries you mark</td><td>Shoulder, back, waist/hips, wrist, knee</td><td>Yes</td></tr>
-      <tr><td>Workout history</td><td>Date and time, plan and day, duration, estimated calories, exercises completed</td><td>Yes</td></tr>
-      <tr><td>App settings</td><td>Rest time, countdown length, voice guide and sound on/off, warm-up on/off, units</td><td>No</td></tr>
+      <tr><td>Workout history</td><td>Date and time, plan and day, duration, estimated calories, exercises completed, and activities you add yourself (type, date, duration)</td><td>Yes</td></tr>
+      <tr><td>App settings</td><td>Rest time, countdown length, voice guide and sound on/off, warm-up on/off, units, reminder days and time</td><td>No</td></tr>
     </tbody>
   </table>
   <p>We do <strong>not</strong> collect your name, email, phone number, location, contacts, photos, device identifiers, advertising ID or payment details. You never need an account.</p>
@@ -67,7 +67,7 @@
     <li><strong>Build your plan</strong>: your goal picks the plan; your fitness level and stamina set how long and how many reps; your injuries swap out exercises that load that body part.</li>
     <li><strong>Show estimates</strong>: your height and weight give your BMI, your estimated calories per workout, and a projected date for your target weight.</li>
     <li><strong>Track progress</strong>: your history shows completed days, plan progress and your streak.</li>
-    <li><strong>Remember your preferences</strong>: settings and units stay as you left them.</li>
+    <li><strong>Remember your preferences</strong>: settings, units and reminder times stay as you left them, and reminders arrive on the days you chose.</li>
   </ul>
   <p>We do not use your information for advertising, profiling, selling, or training any model, and we never see it.</p>
 
@@ -76,14 +76,16 @@
   <ul>
     <li><strong>Voice guide</strong>: spoken cues are created by the text-to-speech engine already on your phone (usually Google's). The app passes it short phrases such as "Rest. Next up: squats, 12 reps", never your personal details. That engine is run by its own provider under their privacy policy.</li>
     <li><strong>Device backup</strong>: if you have turned on Android's own backup, Android may include the app's data in your Google account backup, under Google's policy. You control this in your phone's settings.</li>
-    <li><strong>Google Play</strong>: Google may collect data about installs and crashes through Play, under Google's privacy policy. We do not add any extra tracking.</li>
+    <li><strong>Google Play</strong>: Google may collect data about installs and crashes through Play, under Google's privacy policy. We do not add any extra tracking. Links in the app's settings (privacy policy, Rate us, Send feedback, Share) open your browser, the Play Store, your email app or the share menu, which work under their own policies; nothing is sent unless you send it.</li>
   </ul>
 
   <h2>Permissions</h2>
-  <p>The app asks for no permissions that need your approval. It declares two basic ones that Android grants automatically:</p>
+  <p>The app asks for one permission that needs your approval, and only when you turn on workout reminders. The others are granted automatically:</p>
   <table>
     <thead><tr><th>Permission</th><th>Why</th></tr></thead>
     <tbody>
+      <tr><td>Notifications (POST_NOTIFICATIONS)</td><td>Shows your workout reminders. Android asks you first; you can say no or turn it off any time</td></tr>
+      <tr><td>Run at startup (RECEIVE_BOOT_COMPLETED)</td><td>Puts your reminders back after the phone restarts</td></tr>
       <tr><td>Keep the screen awake (WAKE_LOCK)</td><td>Stops the screen turning off while you follow a workout</td></tr>
       <tr><td>View network state (ACCESS_NETWORK_STATE)</td><td>Used by the built-in media player library. The app has no internet permission and sends nothing over the network</td></tr>
     </tbody>
@@ -110,7 +112,7 @@
   </ul>
 
   <h2>Changes and contact</h2>
-  <p>We will update this policy before adding any feature that changes what the app collects or shares, such as sign-in and cloud backup, workout reminders, ads, analytics or in-app purchases. The new version will be posted at this address with a new effective date, and important changes will also be shown in the app.</p>
+  <p>We will update this policy before adding any feature that changes what the app collects or shares, such as sign-in and cloud backup, ads, analytics or in-app purchases. The new version will be posted at this address with a new effective date, and important changes will also be shown in the app.</p>
   <p><strong>Contact</strong>: AshStudio, India. Email: <a href="mailto:ashstudio.app@gmail.com">ashstudio.app@gmail.com</a>.</p>
 
   <footer>© 2026 AshStudio</footer>
