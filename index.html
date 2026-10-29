@@ -41,10 +41,10 @@
 <body>
 <main>
   <h1>Privacy Policy – Home Workout</h1>
-  <p class="meta">AshStudio · Effective date: 28 October 2026</p>
+  <p class="meta">AshStudio · Effective date: 29 October 2026</p>
 
   <h2>Summary</h2>
-  <p class="summary">Home Workout keeps everything you enter on your own phone. We have no servers, no accounts and no analytics, and the app cannot connect to the internet, so your data is never sent to us or anyone else.</p>
+  <p class="summary">Home Workout keeps everything you enter on your own phone. We have no accounts, no analytics and no ads, and the app never sends your data to us or anyone else.</p>
   <p>This policy explains what Home Workout ("the app"), published by AshStudio ("we", "us"), stores, why, and how you stay in control of it. It applies to the Android app distributed through Google Play.</p>
 
   <h2>Information the app stores</h2>
@@ -86,8 +86,10 @@
     <tbody>
       <tr><td>Notifications (POST_NOTIFICATIONS)</td><td>Shows your workout reminders. Android asks you first; you can say no or turn it off any time</td></tr>
       <tr><td>Run at startup (RECEIVE_BOOT_COMPLETED)</td><td>Puts your reminders back after the phone restarts</td></tr>
+      <tr><td>Vibrate (VIBRATE)</td><td>Lets workout reminders vibrate, following your phone's notification settings</td></tr>
       <tr><td>Keep the screen awake (WAKE_LOCK)</td><td>Stops the screen turning off while you follow a workout</td></tr>
-      <tr><td>View network state (ACCESS_NETWORK_STATE)</td><td>Used by the built-in media player library. The app has no internet permission and sends nothing over the network</td></tr>
+      <tr><td>Internet (INTERNET)</td><td>Included for an optional cloud backup that isn't switched on in this version. The app sends none of your data</td></tr>
+      <tr><td>View network state (ACCESS_NETWORK_STATE)</td><td>Used by the built-in media player and backup libraries</td></tr>
     </tbody>
   </table>
 
