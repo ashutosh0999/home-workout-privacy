@@ -44,7 +44,7 @@
   <p class="meta">AshStudio · Effective date: 29 October 2026</p>
 
   <h2>Summary</h2>
-  <p class="summary">Home Workout keeps everything you enter on your own phone. We have no accounts, no analytics and no ads, and the app never sends your data to us or anyone else.</p>
+  <p class="summary">Home Workout keeps everything you enter on your own phone. Cloud backup is an optional part of the Premium subscription: only if you subscribe and choose to sign in with your Google account is a copy of your data stored in the cloud, so you can restore it on a new phone. We use no analytics and no ads, and we never sell your data.</p>
   <p>This policy explains what Home Workout ("the app"), published by AshStudio ("we", "us"), stores, why, and how you stay in control of it. It applies to the Android app distributed through Google Play.</p>
 
   <h2>Information the app stores</h2>
@@ -59,7 +59,8 @@
       <tr><td>App settings</td><td>Rest time, countdown length, voice guide and sound on/off, warm-up on/off, units, reminder days and time</td><td>No</td></tr>
     </tbody>
   </table>
-  <p>We do <strong>not</strong> collect your name, email, phone number, location, contacts, photos, device identifiers, advertising ID or payment details. You never need an account.</p>
+  <p><strong>Only if you have Premium and sign in with Google</strong> to back up, we also receive your Google account's email address, name and an account ID from Google, to link your backup to you.</p>
+  <p>We do <strong>not</strong> collect your phone number, location, contacts, photos, device identifiers, advertising ID or payment details. You never need an account to use the app.</p>
 
   <h2>How the app uses it</h2>
   <p>Everything is used on your phone, only to run the app for you:</p>
@@ -68,14 +69,20 @@
     <li><strong>Show estimates</strong>: your height and weight give your BMI, your estimated calories per workout, and a projected date for your target weight.</li>
     <li><strong>Track progress</strong>: your history shows completed days, plan progress and your streak.</li>
     <li><strong>Remember your preferences</strong>: settings, units and reminder times stay as you left them, and reminders arrive on the days you chose.</li>
+    <li><strong>Back up and restore (Premium, optional)</strong>: if you have Premium and sign in, your data is copied to your backup so it can be restored on another phone.</li>
   </ul>
-  <p>We do not use your information for advertising, profiling, selling, or training any model, and we never see it.</p>
+  <p>We do not use your information for advertising, profiling, selling, or training any model. We do not look at individual backups.</p>
 
   <h2>Where it is stored and who sees it</h2>
-  <p>Your information is stored only in the app's private storage on your device, which other apps cannot read. We do not share, sell or transfer it to anyone, because it never leaves your phone.</p>
+  <p>Your information is stored in the app's private storage on your device, which other apps cannot read. If you don't sign in, it never leaves your phone.</p>
+  <ul>
+    <li><strong>Cloud backup (Premium, only if you sign in)</strong>: a copy of the information above is stored with Google Firebase (Firebase Authentication and Cloud Firestore), which acts as our service provider under Google's terms. It is sent over an encrypted connection and protected so that only your signed-in account can read or change it. Your backup is updated automatically while you are signed in.</li>
+  </ul>
+  <p>We do not sell or share your information with anyone else. Other services the app touches:</p>
   <ul>
     <li><strong>Voice guide</strong>: spoken cues are created by the text-to-speech engine already on your phone (usually Google's). The app passes it short phrases such as "Rest. Next up: squats, 12 reps", never your personal details. That engine is run by its own provider under their privacy policy.</li>
     <li><strong>Device backup</strong>: if you have turned on Android's own backup, Android may include the app's data in your Google account backup, under Google's policy. You control this in your phone's settings.</li>
+    <li><strong>Subscriptions</strong>: Premium is bought and managed through Google Play billing. Google handles your payment; we never receive your card or payment details. The app only checks with Google Play on your phone whether your subscription is active. If Premium ends, backup stops and your existing backup is kept until you delete it.</li>
     <li><strong>Google Play</strong>: Google may collect data about installs and crashes through Play, under Google's privacy policy. We do not add any extra tracking. Links in the app's settings (privacy policy, Rate us, Send feedback, Share) open your browser, the Play Store, your email app or the share menu, which work under their own policies; nothing is sent unless you send it.</li>
   </ul>
 
@@ -88,33 +95,37 @@
       <tr><td>Run at startup (RECEIVE_BOOT_COMPLETED)</td><td>Puts your reminders back after the phone restarts</td></tr>
       <tr><td>Vibrate (VIBRATE)</td><td>Lets workout reminders vibrate, following your phone's notification settings</td></tr>
       <tr><td>Keep the screen awake (WAKE_LOCK)</td><td>Stops the screen turning off while you follow a workout</td></tr>
-      <tr><td>Internet (INTERNET)</td><td>Included for an optional cloud backup that isn't switched on in this version. The app sends none of your data</td></tr>
-      <tr><td>View network state (ACCESS_NETWORK_STATE)</td><td>Used by the built-in media player and backup libraries</td></tr>
+      <tr><td>Internet (INTERNET)</td><td>Used only for the optional cloud backup and sign-in, together with a Google Play services setting that the sign-in library reads. Without signing in, the app sends none of your data</td></tr>
+      <tr><td>View network state (ACCESS_NETWORK_STATE)</td><td>Lets the backup wait until you are online</td></tr>
     </tbody>
   </table>
 
   <h2>Keeping and deleting your data</h2>
-  <p>Your data stays on your phone until you delete it. Because we hold no copy, we cannot delete or recover it for you, and nothing remains with us after you delete it.</p>
+  <p>Data on your phone stays until you delete it. Your cloud backup stays until you delete it or your account.</p>
   <ol>
     <li><strong>Change answers</strong>: in the app, open Me → Retake the quiz.</li>
     <li><strong>Delete everything</strong>: Android Settings → Apps → Home Workout → Storage → Clear storage.</li>
     <li><strong>Remove the app</strong>: uninstalling deletes all of its data from the phone.</li>
   </ol>
+  <ol start="4">
+    <li><strong>Delete your cloud backup and account</strong>: in the app, open Me → Delete cloud data. This permanently deletes your backup and your sign-in account from our servers straight away. Data on the phone is kept until you clear it as above.</li>
+    <li><strong>Can't use the app?</strong> Email <a href="mailto:ashstudio.app@gmail.com">ashstudio.app@gmail.com</a> from the Google account you signed in with and ask us to delete your account and backup. We will do so within 30 days and confirm by email.</li>
+  </ol>
   <p>If Android backup is on, also delete the app's backup from your Google account settings.</p>
 
   <h2>Your rights</h2>
   <p>Depending on where you live, laws such as India's Digital Personal Data Protection Act 2023, the EU/UK GDPR and California's CCPA give you rights to access, correct, delete and port your personal data, to withdraw consent, and to complain to a regulator.</p>
-  <p>Since all of your data is on your device, you exercise these rights directly: you can see and change it in the app and delete it at any time as described above. We never sell or share personal data. For any privacy question or complaint, email <a href="mailto:ashstudio.app@gmail.com">ashstudio.app@gmail.com</a> and we will reply within 30 days.</p>
+  <p>You can see and change your data in the app, and delete it from your phone and from the cloud at any time as described above. For a copy of your backup, or anything else, contact us. We never sell personal data. For any privacy question or complaint, email <a href="mailto:ashstudio.app@gmail.com">ashstudio.app@gmail.com</a> and we will reply within 30 days.</p>
 
   <h2>Children, security and health</h2>
   <ul>
     <li><strong>Children</strong>: the app is meant for adults aged 18 and over and is not directed at children or teenagers. The birth-year picker only allows ages 18 and up. If we learn that someone under 18 is using it, we will ask them to stop.</li>
-    <li><strong>Security</strong>: your data sits in app-private storage protected by Android's app sandbox and your phone's screen lock and encryption. Keep your phone locked to protect it.</li>
+    <li><strong>Security</strong>: on the phone, your data sits in app-private storage protected by Android's app sandbox and your screen lock. Cloud backups are encrypted in transit and at rest by Google, and access rules allow only your own signed-in account to read them.</li>
     <li><strong>Not medical advice</strong>: plans, BMI, calorie and weight-date figures are general estimates, not medical advice. Check with a doctor before starting if you have an injury, a health condition or are pregnant, and stop if anything hurts.</li>
   </ul>
 
   <h2>Changes and contact</h2>
-  <p>We will update this policy before adding any feature that changes what the app collects or shares, such as sign-in and cloud backup, ads, analytics or in-app purchases. The new version will be posted at this address with a new effective date, and important changes will also be shown in the app.</p>
+  <p>We will update this policy before adding any feature that changes what the app collects or shares, such as ads, analytics or in-app purchases. The new version will be posted at this address with a new effective date, and important changes will also be shown in the app.</p>
   <p><strong>Contact</strong>: AshStudio, India. Email: <a href="mailto:ashstudio.app@gmail.com">ashstudio.app@gmail.com</a>.</p>
 
   <footer>© 2026 AshStudio</footer>
