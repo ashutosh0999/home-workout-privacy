@@ -44,7 +44,7 @@
   <p class="meta">AshStudio · Effective date: 29 October 2026</p>
 
   <h2>Summary</h2>
-  <p class="summary">Home Workout keeps everything you enter on your own phone. Cloud backup is an optional part of the Premium subscription: only if you subscribe and choose to sign in with your Google account is a copy of your data stored in the cloud, so you can restore it on a new phone. We use no analytics and no ads, and we never sell your data.</p>
+  <p class="summary">Home Workout keeps everything you enter on your own phone. Cloud backup is an optional part of the Premium subscription: only if you subscribe and choose to sign in with your Google account is a copy of your data stored in the cloud, so you can restore it on a new phone. If you use the app without Premium, it shows occasional full-screen ads from Google AdMob; Premium removes them. We use no analytics, your health and fitness information is never used for ads, and we never sell your data.</p>
   <p>This policy explains what Home Workout ("the app"), published by AshStudio ("we", "us"), stores, why, and how you stay in control of it. It applies to the Android app distributed through Google Play.</p>
 
   <h2>Information the app stores</h2>
@@ -60,7 +60,7 @@
     </tbody>
   </table>
   <p><strong>Only if you have Premium and sign in with Google</strong> to back up, we also receive your Google account's email address, name and an account ID from Google, to link your backup to you.</p>
-  <p>We do <strong>not</strong> collect your phone number, location, contacts, photos, device identifiers, advertising ID or payment details. You never need an account to use the app.</p>
+  <p>We do <strong>not</strong> collect your phone number, precise location, contacts, photos or payment details. You never need an account to use the app. If you use the app without Premium, Google's ads software in the app collects some device information, including your advertising ID, to show ads (see <a href="#ads">Ads</a> below). We never receive it.</p>
 
   <h2>How the app uses it</h2>
   <p>Everything is used on your phone, only to run the app for you:</p>
@@ -71,7 +71,7 @@
     <li><strong>Remember your preferences</strong>: settings, units and reminder times stay as you left them, and reminders arrive on the days you chose.</li>
     <li><strong>Back up and restore (Premium, optional)</strong>: if you have Premium and sign in, your data is copied to your backup so it can be restored on another phone.</li>
   </ul>
-  <p>We do not use your information for advertising, profiling, selling, or training any model. We do not look at individual backups.</p>
+  <p>We do not use the information above for advertising, profiling, selling, or training any model, and none of it is passed to the ads software. We do not look at individual backups.</p>
 
   <h2>Where it is stored and who sees it</h2>
   <p>Your information is stored in the app's private storage on your device, which other apps cannot read. If you don't sign in, it never leaves your phone.</p>
@@ -83,6 +83,7 @@
     <li><strong>Voice guide</strong>: spoken cues are created by the text-to-speech engine already on your phone (usually Google's). The app passes it short phrases such as "Rest. Next up: squats, 12 reps", never your personal details. That engine is run by its own provider under their privacy policy.</li>
     <li><strong>Device backup</strong>: if you have turned on Android's own backup, Android may include the app's data in your Google account backup, under Google's policy. You control this in your phone's settings.</li>
     <li><strong>Subscriptions</strong>: Premium is bought and managed through Google Play billing. Google handles your payment; we never receive your card or payment details. The app only checks with Google Play on your phone whether your subscription is active. If Premium ends, backup stops and your existing backup is kept until you delete it.</li>
+    <li id="ads"><strong>Ads (free version only)</strong>: without Premium, the app shows a full-screen ad from Google AdMob at some moments, such as when you open a plan day or a Discover workout, never during a workout. To show and measure ads and to prevent fraud, Google's Mobile Ads SDK collects your device's advertising ID, IP address (used for approximate location), device and app information, and how you interact with the ads. Google processes this under its own policy: <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps that use its services</a>. In the EEA and UK, the app asks for your consent before personalised ads, and you can change your choice any time in Me → Ad privacy choices. Anywhere, you can reset or delete your advertising ID in Android Settings → Google → Ads. With Premium, no ads are loaded or shown.</li>
     <li><strong>Google Play</strong>: Google may collect data about installs and crashes through Play, under Google's privacy policy. We do not add any extra tracking. Links in the app's settings (privacy policy, Rate us, Send feedback, Share) open your browser, the Play Store, your email app or the share menu, which work under their own policies; nothing is sent unless you send it.</li>
   </ul>
 
@@ -95,8 +96,11 @@
       <tr><td>Run at startup (RECEIVE_BOOT_COMPLETED)</td><td>Puts your reminders back after the phone restarts</td></tr>
       <tr><td>Vibrate (VIBRATE)</td><td>Lets workout reminders vibrate, following your phone's notification settings</td></tr>
       <tr><td>Keep the screen awake (WAKE_LOCK)</td><td>Stops the screen turning off while you follow a workout</td></tr>
-      <tr><td>Internet (INTERNET)</td><td>Used only for the optional cloud backup and sign-in, together with a Google Play services setting that the sign-in library reads. Without signing in, the app sends none of your data</td></tr>
-      <tr><td>View network state (ACCESS_NETWORK_STATE)</td><td>Lets the backup wait until you are online</td></tr>
+      <tr><td>Internet (INTERNET)</td><td>Loads ads in the free version, and is used for the optional cloud backup and sign-in, together with a Google Play services setting that the sign-in library reads. The app never sends your workout or body data anywhere unless you sign in to back up</td></tr>
+      <tr><td>View network state (ACCESS_NETWORK_STATE)</td><td>Lets ads and the backup wait until you are online</td></tr>
+      <tr><td>Google Play billing (BILLING)</td><td>Lets you buy and manage the Premium subscription through Google Play</td></tr>
+      <tr><td>Android ad measurement (ACCESS_ADSERVICES_AD_ID, ACCESS_ADSERVICES_ATTRIBUTION, ACCESS_ADSERVICES_TOPICS)</td><td>Added by Google's ads software for Android's privacy-preserving ad features, in the free version only. You control them in Android Settings → Security &amp; privacy → Ads privacy</td></tr>
+      <tr><td>Advertising ID (AD_ID)</td><td>Lets Google's ads software read your device's advertising ID in the free version, as described under Ads. You can reset or delete it in Android Settings</td></tr>
     </tbody>
   </table>
 
@@ -125,7 +129,7 @@
   </ul>
 
   <h2>Changes and contact</h2>
-  <p>We will update this policy before adding any feature that changes what the app collects or shares, such as ads, analytics or in-app purchases. The new version will be posted at this address with a new effective date, and important changes will also be shown in the app.</p>
+  <p>We will update this policy before adding any feature that changes what the app collects or shares, such as analytics. The new version will be posted at this address with a new effective date, and important changes will also be shown in the app.</p>
   <p><strong>Contact</strong>: AshStudio, India. Email: <a href="mailto:ashstudio.app@gmail.com">ashstudio.app@gmail.com</a>.</p>
 
   <footer>© 2026 AshStudio</footer>
